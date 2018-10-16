@@ -3,7 +3,10 @@
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/vsts/pipelines/languages/java
 
-trigger:
+pool:
+  name: default
+
+  trigger:
 #  batch: true | false  # note, support for batch is coming in August
   branches:
     include:
@@ -16,14 +19,13 @@ trigger:
 #    - exclude: [string]
     
     
-queue: 'default'
-
 steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
+    mavenOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
-    jdkVersionOption:  '1.10'
+    jdkVersionOption: '1.10'
     jdkArchitectureOption: 'x64'
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
