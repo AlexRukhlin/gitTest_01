@@ -18,7 +18,6 @@ pool:
 #    - include: [string]
 #    - exclude: [string]
     
-    
 steps:
 - task: Maven@3
   inputs:
