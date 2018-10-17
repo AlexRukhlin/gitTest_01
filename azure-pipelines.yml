@@ -17,7 +17,6 @@ pool:
     paths:
     - include: src/main/assembly
 #    - exclude: [string]
-
     
 steps:
 - script: echo ===========================
