@@ -14,8 +14,8 @@
     - releases/*
 #    exclude:
 #    - releases/old*
-    paths:
-    - include: src/main/assembly
+#    paths:
+#    - include: src/main/assembly
 #    - exclude: [string]
     
 steps:
