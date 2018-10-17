@@ -14,8 +14,8 @@ pool:
     - releases/*
 #    exclude:
 #    - releases/old*
-#    paths:
-#    - include: [string]
+    paths:
+    - include: src
 #    - exclude: [string]
 
     
