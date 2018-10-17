@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-
 <profiles version="2">
 <profile kind="CleanUpProfile" name="Java ALM" version="2">
 <setting id="cleanup.qualify_static_method_accesses_with_declaring_class" value="true"/>
