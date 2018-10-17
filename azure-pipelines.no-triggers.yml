@@ -1,0 +1,32 @@
+# Maven
+# Build your Java projects and run tests with Apache Maven.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/vsts/pipelines/languages/java
+
+#pool:
+#  name: default
+
+#trigger:
+#  batch: true | false  # note, support for batch is coming in August
+#  branches:
+#    include:
+#    - master
+#    - releases/*
+#    exclude:
+#    - releases/old*
+#    paths:
+#    - include: src/main/assembly
+#    - exclude: [string]
+    
+steps:
+- script: echo ===========================
+#- task: Maven@3
+#  inputs:
+#    mavenPomFile: 'pom.xml'
+#    mavenOptions: '-Xmx3072m'
+#    javaHomeOption: 'JDKVersion'
+#    jdkVersionOption: '1.10'
+#    jdkArchitectureOption: 'x64'
+#    publishJUnitResults: false
+#    testResultsFiles: '**/TEST-*.xml'
+#    goals: dependencies   # 'package'
