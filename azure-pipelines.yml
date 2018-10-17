@@ -6,7 +6,7 @@
 #pool:
 #  name: default
 
-  trigger:
+trigger:
 #  batch: true | false  # note, support for batch is coming in August
   branches:
     include:
