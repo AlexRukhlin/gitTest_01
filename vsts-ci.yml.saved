@@ -11,10 +11,10 @@ trigger:
     - releases/*
 #    exclude:
 #    - releases/old*
+#
 #    paths:
 #    - include: [string]
 #    - exclude: [string]
-    
     
 queue: 'default'
 
